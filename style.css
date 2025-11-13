@@ -1,8 +1,8 @@
 /* Variáveis de Cor */
 :root {
     --primary-color: #F7DEDD; /* Rosa Claríssimo */
-    --secondary-color: #E6B5B3; /* Rosa um pouco mais escuro para destaque */
-    --text-color-dark: #333333;
+    --secondary-color: #db8c89; /* Rosa um pouco mais escuro para destaque */
+    --text-color-dark: rgb(155, 38, 57);
     --text-color-light: #ffffff;
     --font-pacifico: 'Pacifico', cursive;
     --font-open-sans: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@
 
 /* Estilo do Corpo e Fontes */
 body {
-    font-family: var(--font-open-sans);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color-dark);
     background-color: var(--primary-color);
@@ -71,13 +71,13 @@ body {
 }
 
 .dark-bg h2, .dark-bg p, .dark-bg ul, .dark-bg h3 {
-    color: var(--text-color-dark);
+    color: rgb(202, 58, 82);
 }
 
 /* 3. Tabela de Valores - Novo Layout */
 .table-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap; /* Para quebrar em telas menores */
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .table-card h3 {
-    color: var(--secondary-color);
+    color: rgb(204, 58, 82);
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
@@ -122,7 +122,7 @@ table tr:nth-child(even) {
 .note {
     text-align: center;
     font-style: italic;
-    color: #666;
+    color: #551623;
     margin-top: 30px;
 }
 
@@ -143,7 +143,7 @@ table tr:nth-child(even) {
 }
 
 .list-column h3 {
-    color: var(--secondary-color);
+    color: rgb(202, 58, 82);
     margin-bottom: 15px;
     border-bottom: 1px solid var(--secondary-color);
     padding-bottom: 5px;
@@ -211,19 +211,20 @@ table tr:nth-child(even) {
 }
 
 .contact-link {
-    color: var(--secondary-color);
+    color: #b86864 ;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-link:hover {
-    color: #A05250;
+    color:rgb(202, 58, 82);
 }
 
 /* 7. Formulário de Encomenda */
 .form-section {
     background-color: #ffffff;
+    color: rgb(200, 58, 82);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -316,6 +317,7 @@ table tr:nth-child(even) {
     .table-container,
     .sabores-container {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
