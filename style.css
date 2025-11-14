@@ -18,6 +18,7 @@
 /* Estilo do Corpo e Fontes */
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
     line-height: 1.6;
     color: var(--text-color-dark);
     background-color: var(--primary-color);
@@ -27,6 +28,7 @@ body {
 /* 1. Cabeçalho (Hero) */
 .hero {
     background-color: var(--secondary-color);
+    /*background-image: url(imagens-bolos/bolo-rosa.png);*/
     color: var(--text-color-light);
     padding: 60px 20px;
     text-align: center;
@@ -154,6 +156,11 @@ table tr:nth-child(even) {
     padding-left: 20px;
 }
 
+.list-column-salgados ul {
+    list-style-type: ' '; /* Ícone divertido para a lista */
+    padding-left: 20px;
+}
+
 .list-column li {
     margin-bottom: 8px;
 }
@@ -224,7 +231,7 @@ table tr:nth-child(even) {
 /* 7. Formulário de Encomenda */
 .form-section {
     background-color: #ffffff;
-    color: rgb(200, 58, 82);
+    color: rgb(24, 20, 20);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -332,6 +339,6 @@ table tr:nth-child(even) {
     }
 
     .bolo-card img {
-        height: 200px; /* Ajuste para telas menores */
+        height: 400px; /* Ajuste para telas menores */
     }
 }

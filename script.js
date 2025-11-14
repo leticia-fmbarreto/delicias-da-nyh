@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 1. Coleta dos dados do formulário
         const nome = document.getElementById('nome').value;
         const telefone = document.getElementById('telefone').value;
-        const data = document.getElementById('data').value;
+        const data = document.getElementById('data').value.;
         const detalhes = document.getElementById('detalhes').value;
 
         // 2. Formatação da mensagem
