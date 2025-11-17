@@ -147,21 +147,17 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Se a pessoa não selecionou nada, avisa
         if (itensDoPedido === '') {
-            itensDoPedido = 'O cliente não selecionou itens das tabelas de valores, massas e recheios.%0A';
+            itensDoPedido = '*O cliente não selecionou itens das tabelas de valores, massas e recheios.*';
         }
 
 
         // 3. Formatação da mensagem final para WhatsApp
         const mensagem = 
-            `Olá, Delícias da Nyh! Gostaria de fazer uma encomenda.<br>` +
-            `*DADOS DO CLIENTE*<br>` +
-            `*Nome:* ${nome}` +
-            `*Telefone:* ${telefone}` +
-            `*Data Prevista:* ${data}` +
-            `*DETALHES DO PEDIDO*` +
-            itensDoPedido +
-            (detalhes ? `*Observações Adicionais:* ${detalhes}` : '') +
-            `*Aguardando a confirmação!*`;
+            `Olá, Delícias da Nyh! Gostaria de fazer uma encomenda.\n
+            *DADOS DO CLIENTE:**Nome:* ${nome}\n
+            *Telefone:* ${telefone}\n 
+            *Data Prevista:* ${data}
+            *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? `*Observações Adicionais:* ${detalhes}\n` : ''}*Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento
         const whatsappLink = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
