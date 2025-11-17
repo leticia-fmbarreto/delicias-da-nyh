@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pedidoSelecionado.forEach((items, category) => {
             // Verifica se é um array de itens ou um item único
             const itemString = Array.isArray(items) ? items.join(', ') : items;
-            itensDoPedido += `*${category}:* ${itemString}%0A`;
+            itensDoPedido += `*${category}:* ${itemString} `;
         });
         
         // Se a pessoa não selecionou nada, avisa
@@ -154,10 +154,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // 3. Formatação da mensagem final para WhatsApp
         const mensagem = 
             `Olá, Delícias da Nyh! Gostaria de fazer uma encomenda.\n
-            *DADOS DO CLIENTE:**Nome:* ${nome}\n
-            *Telefone:* ${telefone}\n 
-            *Data Prevista:* ${data}
-            *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? `*Observações Adicionais:* ${detalhes}\n` : ''}*Aguardando a confirmação!*`;
+        *DADOS DO CLIENTE:* 
+        *Nome:* ${nome}
+        *Telefone:* ${telefone} 
+        *Data Prevista:* ${data}
+        *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? `*Observações Adicionais:* ${detalhes}` : ''}
+        \n *Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento
         const whatsappLink = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
