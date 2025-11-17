@@ -153,14 +153,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 3. Formatação da mensagem final para WhatsApp
         const mensagem = 
-            `Olá, Delícias da Nyh! Gostaria de fazer uma encomenda. 🎂%0A%0A` +
-            `*--- DADOS DO CLIENTE ---*%0A` +
-            `*Nome:* ${nome}%0A` +
-            `*Telefone:* ${telefone}%0A` +
-            `*Data Prevista:* ${data}%0A%0A` +
-            `*--- DETALHES DO PEDIDO ---*%0A` +
+            `Olá, Delícias da Nyh! Gostaria de fazer uma encomenda.<br>` +
+            `*DADOS DO CLIENTE*<br>` +
+            `*Nome:* ${nome}` +
+            `*Telefone:* ${telefone}` +
+            `*Data Prevista:* ${data}` +
+            `*DETALHES DO PEDIDO*` +
             itensDoPedido +
-            (detalhes ? `%0A*Observações Adicionais:* ${detalhes}%0A%0A` : '') +
+            (detalhes ? `*Observações Adicionais:* ${detalhes}` : '') +
             `*Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento

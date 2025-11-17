@@ -26,6 +26,12 @@ body {
     padding-bottom: 60px; /* Espaço para o rodapé fixo */
 }
 
+main h1 {
+    color: rgb(204, 58, 82);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
 /* Estilo para esconder o título de acessibilidade (screen reader only) */
 .sr-only {
     position: absolute;
