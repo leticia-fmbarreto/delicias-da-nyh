@@ -28,9 +28,8 @@ body {
 }
 
 main h1 {
-    background-color: var(--text-color-light);
     color: rgb(204, 58, 82);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     border-radius: 10px;
 }
