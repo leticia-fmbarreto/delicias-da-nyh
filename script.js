@@ -158,8 +158,9 @@ document.addEventListener('DOMContentLoaded', function() {
         *Nome:* ${nome}
         *Telefone:* ${telefone} 
         *Data Prevista:* ${data}
-        *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? `*Observações Adicionais:* ${detalhes}` : ''}
-        \n *Aguardando a confirmação!*`;
+        *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? 
+        `*Observações Adicionais:* ${detalhes}` : ''}
+        *Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento
         const whatsappLink = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;

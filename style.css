@@ -28,9 +28,11 @@ body {
 }
 
 main h1 {
+    background-color: var(--text-color-light);
     color: rgb(204, 58, 82);
     font-size: 1.9rem;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 /* Estilo para esconder o título de acessibilidade (screen reader only) */
@@ -50,7 +52,7 @@ main h1 {
 .hero {
     /* Removido o padding original */
     padding: 0; 
-    height: 400px; /* Altura fixa de 400 pixels */
+    height: 480px; /* Altura fixa de 400 pixels */
     width: 100%;
     
     /* Configuração da Imagem de Fundo */
@@ -81,8 +83,8 @@ main h1 {
     font-size: 2rem;
     color: var(--text-color-dark);
     text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 3px solid var(--secondary-color);
+    margin-bottom: 20px;
+    border-bottom: 2.5px solid #e78192;
     display: inline-block;
     padding-bottom: 5px;
     width: auto;
@@ -387,7 +389,7 @@ table tr:not(.is-selected):nth-child(even) {
 @media (max-width: 768px) {
     /* Ajusta a altura da imagem de fundo para mobile para não ocupar muito espaço */
     .hero {
-        height: 300px; /* Reduz para 250px em telas menores */
+        height: 310px; /* Reduz para 250px em telas menores */
     }
 
     /* ... (Resto da Media Query inalterado) ... */
@@ -409,16 +411,19 @@ table tr:not(.is-selected):nth-child(even) {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        text-align: center;
     }
 
     .table-card,
     .list-column {
         flex-basis: 100%;
+        width: 70%;
     }
 
     table {
         display: block;
-        overflow-x: auto; 
+        overflow-x: auto;
+        margin-left: 25px ;
     }
 
     .bolo-card img {
