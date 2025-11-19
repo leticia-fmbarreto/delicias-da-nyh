@@ -157,9 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
         *DADOS DO CLIENTE:* 
         *Nome:* ${nome}
         *Telefone:* ${telefone} 
-        *Data Prevista:* ${data}
-        *DETALHES DO PEDIDO* ${itensDoPedido}${detalhes ? 
-        `*Observações Adicionais:* ${detalhes}` : ''}
+        *Data Prevista:* ${data} \n
+        *DETALHES DO PEDIDO* ${itensDoPedido}
+        ${detalhes ? 
+        `*Observações Adicionais:* ${detalhes}` : ''}\n
         *Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento
