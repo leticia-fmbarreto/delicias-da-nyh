@@ -159,9 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
     *Telefone:* ${telefone} 
     *Data Prevista:* ${data} \n
     
-    *DETALHES DO PEDIDO*
+*DETALHES DO PEDIDO*
     ${itensDoPedido}
-    ${detalhes ? 
+    ${detalhes ?
     `*OBSERVAÇÕES ADICIONAIS:* ${detalhes}` : ''}\n
         *Aguardando a confirmação!*`;
 
