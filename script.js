@@ -161,8 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 *DETALHES DO PEDIDO*
 ${itensDoPedido} |
-${detalhes ?
-`*OBSERVAÇÕES ADICIONAIS:* ${detalhes}` : ''}\n
+${detalhes ? `*OBSERVAÇÕES ADICIONAIS:* ${detalhes}` : ''}\n
     *Aguardando a confirmação!*`;
 
         // 4. Criação e Redirecionamento
