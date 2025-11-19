@@ -423,7 +423,7 @@ table tr:not(.is-selected):nth-child(even) {
     table {
         display: block;
         overflow-x: auto;
-        margin-left: 25px ;
+        margin-left: 20px ;
     }
 
     .bolo-card img {
