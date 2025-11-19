@@ -394,7 +394,7 @@ table tr:not(.is-selected):nth-child(even) {
 
     /* ... (Resto da Media Query inalterado) ... */
     .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .subtitle {
